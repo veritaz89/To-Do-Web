@@ -1,0 +1,75 @@
+body{
+	color: #333;
+	font-family: "Helvetica Neue",Helvetica,"lucinda sans unicode";
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+header{
+	background-color: #D1E0E1;
+	height: 80px;	
+}
+header h1{
+	font-size: 20px;
+	text-decoration: bold;
+	line-height: 80px;
+	text-align: center;
+}
+footer{
+	background-color: #D1E0E1;
+	font-size: 12px;
+	color: #333;
+	height: 60px;
+	line-height: 80px;
+	margin: 30px 0 0 0;
+	text-align: center;
+}
+section{
+	margin: 20px 0 0 20px;
+}
+label{
+	padding: 8px 0 8px 0;
+	display: block;
+}
+input{
+	border: 1px solid #AAA;
+	height: 24px;
+	padding: 0 7px;
+}
+input.large{
+	width: 400px;
+}
+select{
+	border: 1px solid #AAA;
+	margin-right: 15px;
+	width: 200px;	
+}
+.logo{
+	margin-top: 3px;
+}
+.buttons{
+	margin: 15px 0 10px 0;
+}
+.buttons a{
+	background-color: #53777A;
+	border: 1px solid #888;
+	color: #FFF;
+	font-size: 13px;
+	padding: 5px 10px;
+	text-align: center;
+	width: 80px;
+	text-decoration: none;
+}
+table{
+	border: 1px solid #888;
+	border-collapse: collapse;;
+	width: 90%;
+}
+thead th{
+	background-color: #53777A;
+	color: #FFF;
+	font-size: 20px;
+	text-decoration: bold;
+	text-align: center;
+	line-height: 30px;
+}

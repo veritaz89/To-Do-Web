@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Meine TODO-Liste</h1>
+		</header>
+		<main>
+			<section>
+				<div>
+					<label>Aufgabe</label>
+					<input type="text" name="task" class="large">
+				</div>
+				<div>
+					<label>eredigt bis</label>
+					<input type="date" name="requiredby">
+				</div> 
+				<div>
+					<label>Kategorie</label>
+					<select name="category" >
+						<option value="privat">Privat</option>
+						<option value="arbeit">Arbeit</option>
+						<option value="schule">Schule</option>
+					</select>
+				</div> 
+				<div class="buttons">
+					<a href="#" id="btnAddTask">Aufgabe speichern</a>
+				</div> 
+			</section>			
+			<section>
+				<table id="tblTask">
+					<thead>
+						<tr>
+							<td>Aufgabe</td>
+							<td><time>bis</time></td>
+							<td>Kategorie</td>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</section>
+		</main>
+		<footer>
+			<img class="logo" src="picture/Logo.jpg" >
+			<a href="http://oszimt.de"></a>
+		</footer>
+	</body>
+</html>
