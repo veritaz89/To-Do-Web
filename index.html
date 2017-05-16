@@ -4,10 +4,10 @@
 	  	<meta charset="utf-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="CSS/style.css">
-		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-		<link rel="stylesheet" href="/resources/demos/style.css">
-		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="CSS/jquery-ui.css">
+		<link rel="stylesheet" href="https:///resources/demos/style.css">
+		<script src="JS/jquery-1.12.4.js"></script>
+		<script src="JS/jquery-ui.js"></script>
 		<script src="JS/ui.js"></script>
 	</head>
 	<body>
@@ -18,7 +18,7 @@
 			<section>
 				<div>
 					<label>Aufgabe</label>
-					<input type="text" name="task" class="large">
+					<input type="text" name="task" class="large" id="task">
 				</div>
 				<div>
 					<label>eredigt bis</label>
@@ -26,14 +26,14 @@
 				</div> 
 				<div>
 					<label>Kategorie</label>
-					<select name="category" >
+					<select name="category" id="category" >
 						<option value="privat">Privat</option>
 						<option value="arbeit">Arbeit</option>
 						<option value="schule">Schule</option>
 					</select>
 				</div> 
 				<div class="buttons">
-					<a href="#" id="btnAddTask">Aufgabe speichern</a>
+					<a href="#" id="btnAddTask" onclick ="addRow();">Aufgabe speichern</a>
 				</div> 
 			</section>			
 			<section>
