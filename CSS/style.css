@@ -73,3 +73,48 @@ thead th{
 	text-align: center;
 	line-height: 30px;
 }
+
+/* Datepicker CSS Style*/
+#ui-datepicker-div{
+background-color:white;
+border: 1px solid #888;
+}
+
+span.ui-icon.ui-icon-circle-triangle-w {
+    background-color: #53777A;
+	/*border: 1px solid #888;*/
+	cursor:pointer;
+	color: #FFF;
+	font-size: 20px;
+	font-weight:bold;
+	float:left;
+	margin: 2px;
+}
+
+span.ui-icon.ui-icon-circle-triangle-e{
+    background-color: #53777A;
+	/*border: 1px solid #888;*/
+	cursor:pointer;
+	color: #FFF;
+	font-size: 20px;
+	font-weight:bold;
+	float:right;
+	margin: 2px;
+}
+
+div.ui-datepicker-title {
+    font-size: 20px;
+	font-weight:bold;
+	text-align: center;
+	line-height: 30px;
+	color: #FFF;
+	background-color: #53777A;
+}
+.ui-datepicker-calendar tbody tr td {
+	text-align:center;
+	Padding-left: 0px;
+}
+.ui-datepicker-calendar tbody tr td a{
+	color:#333;
+	text-decoration: none;
+}
