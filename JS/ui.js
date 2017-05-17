@@ -23,8 +23,17 @@
 	});
   } );
 
+var taskArry = [];
+function init(){
+  if (localStorage.taskRecord) {
+    taskArry = JSON.parse(localStorage.taskRecord);
+    for (var i=0; i < taskArry.length;i++) {
 
-  function addRow(){
+      insertData(taskArry[i].Otask,taskArry[i].Odate,taskArry[i].Ocategory);
+    }
+  }
+};
+  function GetData(){
   	var task = document.getElementById('task').value;
   	var category = document.getElementById('category').value;
   	var datespliter = this['datepicker'].value.split(".");
@@ -32,6 +41,15 @@
   	var month = datespliter[1];
   	var year = datespliter[2];
   	var date = day+'.'+month+'.'+year;
-  	$("tbody").append("<tr><td>"+task+"</td><td>"+date+"</td><td>"+category+"</td></tr>");
-  	
+    var obj = {Otask:task,Odate:date,Ocategory:category};
+    taskArry.push(obj);
+    localStorage.taskRecord = JSON.stringify(taskArry);
+  	insertData(task,date,category);
+  	document.getElementById('task').value="";
+    document.getElementById('category').value="";
+    document.getElementById('datespliter').value="";
+  };
+
+  function insertData(task,date,category){
+    $("tbody").append("<tr><td>"+task+"</td><td>"+date+"</td><td>"+category+"</td></tr>");
   };

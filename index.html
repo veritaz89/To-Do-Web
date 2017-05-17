@@ -10,7 +10,7 @@
 		<script src="JS/jquery-ui.js"></script>
 		<script src="JS/ui.js"></script>
 	</head>
-	<body>
+	<body onload="init();">
 		<header>
 			<h1>Meine TODO-Liste</h1>
 		</header>
@@ -33,17 +33,17 @@
 					</select>
 				</div> 
 				<div class="buttons">
-					<a href="#" id="btnAddTask" onclick ="addRow();">Aufgabe speichern</a>
+					<a href="#" id="btnAddTask" onclick ="GetData();">Aufgabe speichern</a>
 				</div> 
 			</section>			
 			<section>
 				<table id="tblTask">
 					<thead>
 						<tr>
-							<td>Aufgabe</td>
-							<td><time>bis</time></td>
-							<td>Kategorie</td>
-						</tr>
+							<th>Aufgabe</th>
+							<th><time>bis</time></th>
+							<th>Kategorie</th>
+						</tr>						
 					</thead>
 					<tbody></tbody>
 				</table>
